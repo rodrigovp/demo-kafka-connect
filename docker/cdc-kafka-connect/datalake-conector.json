@@ -1,0 +1,14 @@
+{
+   "name": "datalake-conector",
+   "config": {
+      "connector.class":"com.mongodb.kafka.connect.MongoSinkConnector",
+      "connection.uri":"mongodb://user:password@mongodb:27017",
+      "database":"datalake",
+      "collection":"compras-realizadas",
+      "topics":"transacoes",
+
+      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter.schemas.enable": "false"
+   }
+}

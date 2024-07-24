@@ -1,0 +1,9 @@
+spring:
+  application.name: autorizador
+  datasource:
+    url: jdbc:postgresql://localhost:5432/autorizador
+    username: postgres
+    password: abcd1234
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true

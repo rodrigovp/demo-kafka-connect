@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "54fb3e63-7725-4d68-89d9-4ddd451521db",
+		"name": "Autorizador - Demo Kafka para Data Analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2004722",
+		"_collection_link": "https://crimson-zodiac-778758.postman.co/workspace/Alura-Bank~e04b7ac4-1ac1-4c12-9151-66aae393d95c/collection/2004722-54fb3e63-7725-4d68-89d9-4ddd451521db?action=share&source=collection_link&creator=2004722"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/transacoes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cartao\": \"6757456574576574\",\n    \"valor\": 10.01,\n    \"cnpj_estabelecimento\": \"69594322000167\",\n    \"dataHora\": \"2024-07-11T21:00:23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transacoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transacoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
